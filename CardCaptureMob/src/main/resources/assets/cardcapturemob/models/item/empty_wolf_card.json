@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+      "layer0": "cardcapturemob:item/empty_wolf_card"
+    }
+  }
+  
