@@ -11,3 +11,10 @@ pluginManagement {
 plugins {
     id 'org.gradle.toolchains.foojay-resolver-convention' version '0.7.0'
 }
+
+rootProject.name = 'CardCaptureMob'
+include ':core'
+include ':levelsandstats'
+
+project(':core').projectDir = file('CardCaptureMob')
+project(':levelsandstats').projectDir = file('CardCaptureMobLevelsAndStats')

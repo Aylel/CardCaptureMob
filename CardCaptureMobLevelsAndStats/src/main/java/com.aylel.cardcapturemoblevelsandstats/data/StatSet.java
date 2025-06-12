@@ -1,4 +1,4 @@
-package com.aylel.cardcapturemob.data;
+package com.aylel.cardcapturemoblevelsandstats.data;
 
 import net.minecraft.nbt.CompoundTag;
 

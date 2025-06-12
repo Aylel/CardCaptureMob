@@ -68,5 +68,21 @@ public abstract class BaseFamiliarEntity extends PathfinderMob {
         }
         return super.getDisplayName();
     }
+
+    @Override
+    public net.minecraft.world.InteractionResult interactAt(
+            net.minecraft.world.entity.player.Player player,
+            net.minecraft.world.phys.Vec3 vec,
+            net.minecraft.world.InteractionHand hand
+    ) {
+        // Interaction neutre : laisse passer à l’item tenu
+        return super.interactAt(player, vec, hand);
+    }
 }
+
+
+
+
+
+
 

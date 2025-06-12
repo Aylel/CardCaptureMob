@@ -1,0 +1,34 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All rights reserved"
+
+[[mods]]
+modId="cardcapturemoblevelsandstats"
+version="1.0"
+displayName="Card Capture Mob Levels And Stats"
+authors="Aylel"
+description='''
+Module complémentaire pour le mod CardCaptureMob, ajoutant un système avancé de niveaux, d'expérience et de statistiques pour les familiers, joueurs et mobs hostiles.
+'''
+
+[[dependencies.cardcapturemoblevelsandstats]]
+modId="forge"
+mandatory=true
+versionRange="[47.2.17,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.cardcapturemoblevelsandstats]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1]"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.cardcapturemoblevelsandstats]]
+modId="cardcapturemob"
+mandatory=true
+versionRange="[1.0,)"
+ordering="AFTER"
+side="BOTH"
+

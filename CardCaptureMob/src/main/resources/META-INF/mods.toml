@@ -4,7 +4,7 @@ license="All rights reserved"
 
 [[mods]]
 modId="cardcapturemob"
-version="1.0"
+version="1.0.0"
 displayName="CardCaptureMob"
 authors="Aylel"
 description='''
@@ -14,7 +14,7 @@ Mod de capture pour Minecraft 1.20.1.
 [[dependencies.cardcapturemob]]
 modId="forge"
 mandatory=true
-versionRange="[47.1.0,)"
+versionRange="[47.2.17,)"
 ordering="NONE"
 side="BOTH"
 
@@ -25,12 +25,7 @@ versionRange="[1.20.1]"
 ordering="NONE"
 side="BOTH"
 
-[[dependencies.cardcapturemob]]
-modId="geckolib"
-mandatory=true
-versionRange="[4.2.2,)"
-ordering="NONE"
-side="BOTH"
+
 
 
 

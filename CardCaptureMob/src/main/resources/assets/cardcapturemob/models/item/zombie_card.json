@@ -1,0 +1,17 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "cardcapturemob:item/zombie_card"
+  },
+  "id": "zombie_card",
+  "name": "Carte de Zombie",
+  "rarity": "commun",
+  "level": 1,
+  "xp": 0,
+  "points_disponibles": 0,
+  "stats": {
+    "force": 0, "endurance": 0, "intelligence": 0,
+    "volonte": 0, "agilite": 0, "vitesse": 0,
+    "chance": 0, "sagesse": 0, "charisme": 0
+  }
+}

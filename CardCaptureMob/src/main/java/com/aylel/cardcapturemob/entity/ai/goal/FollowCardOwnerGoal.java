@@ -1,21 +1,21 @@
 package com.aylel.cardcapturemob.entity.ai.goal;
 
-import com.aylel.cardcapturemob.entity.custom.BaseFamiliarEntity;
+import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.ai.goal.Goal;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.phys.Vec3;
 
 import java.util.EnumSet;
 
+
 public class FollowCardOwnerGoal extends Goal {
 
-    private final BaseFamiliarEntity familiar;
+    private final TamableAnimal familiar;
     private final double speed;
     private final float stopDistance;
     private final float startDistance;
     private Player owner;
 
-    public FollowCardOwnerGoal(BaseFamiliarEntity familiar, double speed, float startDistance, float stopDistance) {
+    public FollowCardOwnerGoal(TamableAnimal familiar, double speed, float startDistance, float stopDistance) {
         this.familiar = familiar;
         this.speed = speed;
         this.startDistance = startDistance;
@@ -25,17 +25,20 @@ public class FollowCardOwnerGoal extends Goal {
 
     @Override
     public boolean canUse() {
+        if (familiar.getTarget() != null) return false;
+
         if (familiar.getOwnerUUID() == null) return false;
         owner = familiar.level().getPlayerByUUID(familiar.getOwnerUUID());
-        if (owner == null || owner.isSpectator()) return false;
-
-        return familiar.distanceToSqr(owner) > (startDistance * startDistance);
+        return owner != null && !owner.isSpectator() && familiar.distanceToSqr(owner) > (startDistance * startDistance);
     }
+
 
     @Override
     public boolean canContinueToUse() {
+        if (familiar.getTarget() != null) return false; // 🔥 Ne pas continuer à suivre si on est en combat
         return owner != null && familiar.distanceToSqr(owner) > (stopDistance * stopDistance);
     }
+
 
     @Override
     public void start() {
@@ -59,3 +62,4 @@ public class FollowCardOwnerGoal extends Goal {
         }
     }
 }
+
