@@ -1,0 +1,18 @@
+{
+  "item.cardcapturemob.empty_wolf_card": "Empty Wolf Card",
+  "item.cardcapturemob.wolf_card": "Wolf Card",
+
+  "item.cardcapturemob.empty_zombie_card": "Empty Zombie Card",
+  "item.cardcapturemob.zombie_card": "Zombie Card",
+
+  "item.cardcapturemob.empty_stray_card": "Empty Stray Card",
+  "item.cardcapturemob.stray_card": "Stray Card",
+
+  "key.cardcapturemob.category": "CardCaptureMob",
+  "key.cardcapturemob.change_mode": "Change Familiar Mode",
+
+  "entity.cardcapturemob.zombie_familiar": "Zombie",
+  "entity.cardcapturemob.wolf_familiar": "Wolf",
+  "entity.cardcapturemob.stray_familiar": "Stray"
+}
+

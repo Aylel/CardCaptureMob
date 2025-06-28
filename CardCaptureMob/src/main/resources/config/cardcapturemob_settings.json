@@ -1,0 +1,66 @@
+{
+  "empty_wolf_card": {
+    "rarity": "BASIC",
+    "stat_points": 50,
+    "capture_rate": 1.0,
+    "mob_drop_rate": 1.0,
+    "container_drop_rate": 1.0
+  },
+  "empty_zombie_card": {
+    "rarity": "COMMON",
+    "stat_points": 55,
+    "capture_rate": 1.0,
+    "mob_drop_rate": 1.0,
+    "container_drop_rate": 1.0
+  },
+    "empty_stray_card": {
+    "rarity": "RARE",
+    "stat_points": 65,
+    "capture_rate": 1.0,
+    "mob_drop_rate": 1.0,
+    "container_drop_rate": 1.0
+
+  },    
+  "resurrection_scroll_basic": {
+    "mob_drop_rate": 1.0,
+    "container_drop_rate": 1.0,
+    "min_count": 1,
+    "max_count": 1
+  },
+  "resurrection_scroll_advanced": {
+    "mob_drop_rate": 1.0,
+    "container_drop_rate": 1.0,
+    "min_count": 1,
+    "max_count": 1
+  },
+  "resurrection_scroll_supreme": {
+    "mob_drop_rate": 1.0,
+    "container_drop_rate": 1.0,
+    "min_count": 1,
+    "max_count": 1
+  },
+  "minor_familiar_heal_potion": {
+    "mob_drop_rate": 1.0,
+    "container_drop_rate": 1.0,
+    "min_count": 1,
+    "max_count": 2
+  },
+  "advanced_familiar_heal_potion": {
+    "mob_drop_rate": 1.0,
+    "container_drop_rate": 1.0,
+    "min_count": 1,
+    "max_count": 1
+  },
+  "major_familiar_heal_potion": {
+    "mob_drop_rate": 1.0,
+    "container_drop_rate": 1.0,
+    "min_count": 1,
+    "max_count": 1
+  }
+}
+
+
+
+
+
+

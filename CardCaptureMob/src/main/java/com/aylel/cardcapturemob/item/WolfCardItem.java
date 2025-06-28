@@ -14,7 +14,12 @@ public class WolfCardItem extends SummonFamiliarCardItem {
 
     @Override
     protected EntityType<? extends BaseFamiliarEntity> getEntityType() {
-        return ModEntities.WOLF_FAMILIAR.get();
+        return cast(ModEntities.WOLF_FAMILIAR.get());
+    }
+
+    @SuppressWarnings("unchecked")
+    private static <T extends BaseFamiliarEntity> EntityType<T> cast(EntityType<?> type) {
+        return (EntityType<T>) type;
     }
 
     @Override
@@ -22,5 +27,6 @@ public class WolfCardItem extends SummonFamiliarCardItem {
         return CardLoader.INSTANCE.getDefinition("wolf");
     }
 }
+
 
 

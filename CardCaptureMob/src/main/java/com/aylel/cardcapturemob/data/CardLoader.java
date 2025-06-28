@@ -41,7 +41,7 @@ public class CardLoader {
                         try (InputStreamReader reader = new InputStreamReader(Files.newInputStream(path))) {
                             CardDefinition card = gson.fromJson(reader, CardDefinition.class);
                             cards.put(card.id, card);
-                            System.out.println("✅ Carte chargée : " + card.name + " (" + card.rarity + ")");
+                            // Suppression du print debug ici
                         } catch (Exception e) {
                             System.err.println("❌ Erreur en lisant la carte : " + path.getFileName());
                             e.printStackTrace();
@@ -53,15 +53,19 @@ public class CardLoader {
         }
     }
 
-    /** Méthode utilitaire pour récupérer une définition par son ID */
     public CardDefinition getDefinition(String id) {
         return cards.get(id);
     }
 
-    /** Hook Forge pour recharger automatiquement à chaque `resources.reload` */
+    public static CardDefinition getDefinitionById(String id) {
+        return INSTANCE.getDefinition(id);
+    }
+
     @SubscribeEvent
     public static void onReload(AddReloadListenerEvent event) {
         INSTANCE.load();
     }
 }
+
+
 

@@ -1,7 +1,32 @@
 {
   "item.cardcapturemob.empty_wolf_card": "Carte de loup vide",
-  "item.cardcapturemob.wolf_card": "Carte de Loup"
+  "item.cardcapturemob.wolf_card": "Carte de Loup",
+
+  "item.cardcapturemob.empty_zombie_card": "Carte de zombie vide",
+  "item.cardcapturemob.zombie_card": "Carte de Zombie",
+
+  "item.cardcapturemob.empty_stray_card": "Carte de vagabond vide",
+  "item.cardcapturemob.stray_card": "Carte de Vagabond",
+
+  "key.cardcapturemob.category": "CardCaptureMob",
+  "key.cardcapturemob.change_mode": "Changer de comportement du familier",
+
+  "entity.cardcapturemob.zombie_familiar": "Zombie",
+  "entity.cardcapturemob.wolf_familiar": "Loup",
+  "entity.cardcapturemob.stray_familiar": "Vagabond",
+
+  "item.cardcapturemob.resurrection_scroll_basic": "Parchemin de Résurrection basique",
+  "item.cardcapturemob.resurrection_scroll_advanced": "Parchemin de Résurrection avancé",
+  "item.cardcapturemob.resurrection_scroll_supreme": "Parchemin de Résurrection suprême",
+
+  "item.cardcapturemob.minor_familiar_heal_potion": "Potion de soin mineure",
+  "item.cardcapturemob.advanced_familiar_heal_potion": "Potion de soin avancée",
+  "item.cardcapturemob.major_familiar_heal_potion": "Potion de soin majeure"
 }
+
+
+
+
 
   
   
